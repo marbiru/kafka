@@ -7,4 +7,10 @@
 $(function(){
   $("#output").text("Testing testing");
 
+  // Prints new aphorism when Refresh button is clicked
+
+  $("#refresh").click(function(){
+    $("#output").text("Refresh succesful!");
+  });
+
 });
