@@ -16,3 +16,7 @@ function print_aphorism() {
     };
 
 });
+
+$( "button" ).click(function() {
+  $( "#credits" ).slideToggle( "slow" );
+});

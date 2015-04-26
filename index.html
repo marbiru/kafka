@@ -19,14 +19,32 @@
   </tr>
 </table>
 
-<p class="footer"><br />
-	Photo Credits: <br />
+<p class="about"><br />
+	Questions that would be asked frequently, if questions were asked <br />
+	<b>why?</b> I'm learning to code, and it seemed like fun <br />
+	<b>wh.. wh.. what?</b>
+</p>
+
+<p class="footer"> 
+<button id="slider">
+	Photo Credits
+</button>
+</p>
+
+<p class="footer" id="credits">
 	<a href="https://www.flickr.com/photos/worldeconomicforum/5433525697">David Cameron</a> by World Economic Forum under CC BY-NC-SA 2.0 <br />
-	<a href="https://www.flickr.com/photos/thribb/8707234188">Ed Milliband</a> by Paul Bednall under CC BY-NC-SA 2.0</p>
+	<a href="https://www.flickr.com/photos/thribb/8707234188">Ed Milliband</a> by Paul Bednall under CC BY-NC-SA 2.0
+</p>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="aphorisms.js"></script>
+
+<script>
+$( "button" ).click(function() {
+  $( "#credits" ).slideToggle( "slow" );
+});
+</script>
 
 </body>
 </html> 
