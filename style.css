@@ -23,10 +23,9 @@ h1 {
 
 .bubble 
 {
-font-size: 24px;
+font-size: 30px;
 color: #4B4B4D;
-font-weight: normal;
-font-family: "Raleway:200", "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 text-align: center;
 position: relative;
 display:inline-block;
