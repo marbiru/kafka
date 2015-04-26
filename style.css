@@ -8,7 +8,7 @@ h1 {
 .buttons {
   text-align:center;
   color: #4B4B4D;
-  font-size: 25px;
+  font-size: 30px;
   font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
 }
@@ -16,12 +16,13 @@ h1 {
 .bubble 
 {
 font-size: 24px;
+color: #4B4B4D;
 font-weight: normal;
 font-family: "Raleway:200", "Helvetica Neue", Helvetica, Arial, sans-serif;
 text-align: center;
 position: relative;
 display:inline-block;
-max-width:250px;
+max-width:500px;
 min-height:1.5em;
 padding: 20px;
 background: #FFFFFF;
