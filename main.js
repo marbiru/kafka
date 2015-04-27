@@ -8,7 +8,7 @@ $(function(){
   $( "#refresh_button" ).trigger( "click" );
 
 function print_aphorism() {
-	document.getElementById("output").innerHTML = aphorisms[Math.floor(Math.random() * aphorisms.length)]
+	document.getElementById("output").innerHTML = aphorisms[Math.floor(Math.random() * aphorisms.length)];
     };
 
 });
