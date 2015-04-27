@@ -15,6 +15,11 @@ function print_aphorism() {
 
 });
 
-$( "button" ).click(function() {
-  $( "#credits" ).slideToggle( "slow" );
+// makes the 'photo credits' button slide out some photo credits
+
+$(function(){
+	$("#slider_button").click(function(){
+		$( "#credits" ).slideToggle( "slow" );
+	});
+	$( "#slider_button" ).trigger( "click" );
 });
