@@ -13,15 +13,16 @@ function print_aphorism() {
 
 });
 
-// print a photo to the pol_image field
+// select and print a photo for the pol_image field
 
-var photo_ex = '<img src="http://i.imgur.com/cmWb2x8.jpg" alt="David Cameron" height="349" width="366">'
+var photo_counter = 1;
+
 var photo_array = [
-'<img src="http://i.imgur.com/cmWb2x8.jpg" alt="David Cameron" height="349" width="366">',
-'<img src="http://i.imgur.com/15se11u.jpg" alt="Ed Miliband" height="349" width="366">',
-];
+		'<img src="http://i.imgur.com/cmWb2x8.jpg" alt="David Cameron" height="349" width="366">',
+		'<img src="http://i.imgur.com/15se11u.jpg" alt="Ed Miliband" height="349" width="366">',
+		];
 
-$('#pol_image').prepend(photo_array[1])
+$('#pol_image').prepend(photo_array[photo_counter]);  
 
 // on click, the 'photo credits' button slides out the details of any photo credits
 
