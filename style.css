@@ -5,7 +5,19 @@ h1 {
   text-align: center;
 }
 
+.highlight {
+  background-color:#FFFFB5;
+}
+
 .about {
+  text-align:center;
+  color: #4B4B4D;
+  font-size: 14px;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.highlight {
   text-align:center;
   color: #4B4B4D;
   font-size: 14px;
