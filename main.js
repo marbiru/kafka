@@ -15,7 +15,7 @@ function print_aphorism() {
 
 });
 
-// makes the 'photo credits' button slide out some photo credits
+// on click, the 'photo credits' button slides out the details of any photo credits
 
 $(function(){
 	$("#slider_button").click(function(){
@@ -23,3 +23,11 @@ $(function(){
 	});
 	$( "#slider_button" ).trigger( "click" );
 });
+
+$(function(){
+	$("#about_button").click(function(){
+		$( "#about_zurau" ).slideToggle( "slow" );
+	});
+	$( "#about_button" ).trigger( "click" );
+});
+
