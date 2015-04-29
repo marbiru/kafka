@@ -1,10 +1,10 @@
 # kafka
-Politicians saying lines from Kafka's Zürau Aphorisms
+Politicians saying lines from Franz Kafka's *Zürau Aphorisms*
 
 ## why?
 
-I'm learning to code. This seemed like fun
+I'm learning to code. This seemed like fun.
 
 ## tech
 
-html, jQuery and CSS.
+Written in HTML, jQuery and CSS.
