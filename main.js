@@ -15,18 +15,9 @@ function print_aphorism() {
 
 // select and print a photo for the pol_image field
 
-var photo_array = [
-		'<img src="cameron.jpg" alt="David Cameron" height="366" width="366">',
-		'<img src="miliband.jpg" alt="Ed Miliband" height="366" width="366">',
-		'<img src="cameron2.jpg" alt="David Cameron" height="366" width="366">',
-		];
-
 var photo_counter = Math.floor(Math.random() * photo_array.length);
 
 var photo = photo_array[photo_counter];
-
-/* '<img src="http://i.imgur.com/cmWb2x8.jpg" alt="David Cameron" height="349" width="366">',
-'<img src="http://i.imgur.com/15se11u.jpg" alt="Ed Miliband" height="349" width="366">', */
 
 $(function(){
   $("#refresh_button").click(function(){
@@ -40,21 +31,6 @@ $(function(){
 });
 
 // on click, the 'photo credits' button slides out the details of any photo credits
-
-/* $(function(){
-	$("#slider_button").click(function(){
-		$( "#credits" ).slideToggle( "slow" );
-	});
-	$( "#slider_button" ).trigger( "click" );
-}); */
-
-
-/* $(function(){
-	$("#about_button").click(function(){
-		$( "#about_zurau" ).slideToggle( "slow" );
-	});
-	$( "#about_button" ).trigger( "click" );
-}); */
 
 $(function() {
 	$("#slider_button").click(function() {
