@@ -22,13 +22,15 @@ var photo_array = [
 		'<img src="miliband.jpg" alt="Ed Miliband" height="349" width="366">',
 		];
 
+var photo = photo_array[photo_counter];
+
 /* '<img src="http://i.imgur.com/cmWb2x8.jpg" alt="David Cameron" height="349" width="366">',
 '<img src="http://i.imgur.com/15se11u.jpg" alt="Ed Miliband" height="349" width="366">', */
 
 $(function(){
   $("#refresh_button").click(function(){
-  	photo_counter = photo_counter + 1;
-  	// var photo = photo_array[photo_counter];
+  	photo_counter = (photo_counter + 1) % photo_array.length;
+  	// photo = photo_array[photo_counter];
     $("#pol_image").prepend(photo_counter);
   });
   // prints an aphorism on mouse-click
