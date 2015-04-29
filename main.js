@@ -16,9 +16,9 @@ function print_aphorism() {
 // select and print a photo for the pol_image field
 
 var photo_array = [
-		'<img src="cameron.jpg" alt="David Cameron" height="349" width="366">',
-		'<img src="miliband.jpg" alt="Ed Miliband" height="349" width="366">',
-		'<img src="cameron2.jpg">',
+		'<img src="cameron.jpg" alt="David Cameron" height="366" width="366">',
+		'<img src="miliband.jpg" alt="Ed Miliband" height="366" width="366">',
+		'<img src="cameron2.jpg" alt="David Cameron" height="366" width="366">',
 		];
 
 var photo_counter = Math.floor(Math.random() * photo_array.length);
@@ -39,32 +39,31 @@ $(function(){
 
 });
 
-/* $(function(){
-	$("#refresh_button").click(function(){
-		var photo_counter = photo_counter + 1;
-		var photo = lemon_array[photo_counter];
-		$( "#pol_image" ).text(print_photo());
-	});
-	$( "#refresh_button" ).trigger( "click" );
-
-function print_photo() {
-	document.getElementById("pol_image").innerHTML = photo;
-    };
-
-}); */
-
 // on click, the 'photo credits' button slides out the details of any photo credits
 
-$(function(){
+/* $(function(){
 	$("#slider_button").click(function(){
 		$( "#credits" ).slideToggle( "slow" );
 	});
 	$( "#slider_button" ).trigger( "click" );
-});
+}); */
 
-$(function(){
+
+/* $(function(){
 	$("#about_button").click(function(){
 		$( "#about_zurau" ).slideToggle( "slow" );
 	});
 	$( "#about_button" ).trigger( "click" );
+}); */
+
+$(function() {
+	$("#slider_button").click(function() {
+		$("#credits").slideToggle("slow");
+	});
+});
+
+$(document).ready(function() {
+	$("#about_button").click(function() {
+		$("#about_zurau").slideToggle("slow");
+	});
 });
