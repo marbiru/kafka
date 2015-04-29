@@ -7,6 +7,7 @@ $(function(){
   // prints an aphorism on mouse-click
   $( "#refresh_button" ).trigger( "click" );
 
+// This still needs to be replaced with jQuery, not javascript
 function print_aphorism() {
 	document.getElementById("output").innerHTML = aphorisms[Math.floor(Math.random() * aphorisms.length)];
     };
