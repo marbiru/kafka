@@ -15,12 +15,13 @@ function print_aphorism() {
 
 // select and print a photo for the pol_image field
 
-var photo_counter = 1;
-
 var photo_array = [
 		'<img src="cameron.jpg" alt="David Cameron" height="349" width="366">',
 		'<img src="miliband.jpg" alt="Ed Miliband" height="349" width="366">',
+		'<img src="cameron2.jpg">',
 		];
+
+var photo_counter = Math.floor(Math.random() * photo_array.length);
 
 var photo = photo_array[photo_counter];
 
