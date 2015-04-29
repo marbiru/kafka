@@ -1,5 +1,9 @@
 // Prints an aphorism as soon as the page is started
 
+var aphorism_counter = 0
+
+var aphorism = aphorism_array[aphorism_counter];
+
 $(function(){
   $("#refresh_button").click(function(){
     $("#output").text(print_aphorism());
@@ -8,9 +12,12 @@ $(function(){
   $( "#refresh_button" ).trigger( "click" );
 
 // This still needs to be replaced with jQuery, not javascript
-function print_aphorism() {
-	document.getElementById("output").innerHTML = aphorisms[Math.floor(Math.random() * aphorisms.length)];
-    };
+	function print_aphorism() {
+		aphorism_counter = (aphorism_counter + 1) % aphorism_array.length;
+		aphorism = aphorism_array[aphorism_counter];
+		// for some reason this seems to start with aphorism_counter = 2, though that doesn't really matter since the aphorism-list gets shuffled.
+		document.getElementById("output").innerHTML = aphorism;
+    	};
 
 });
 
