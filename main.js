@@ -30,8 +30,8 @@ var photo = photo_array[photo_counter];
 $(function(){
   $("#refresh_button").click(function(){
   	photo_counter = (photo_counter + 1) % photo_array.length;
-  	// photo = photo_array[photo_counter];
-    $("#pol_image").prepend(photo_counter);
+  	photo = photo_array[photo_counter];
+    $("#pol_image").html(photo);
   });
   // prints an aphorism on mouse-click
   $( "#refresh_button" ).trigger( "click" );
